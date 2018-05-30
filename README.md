@@ -5,7 +5,7 @@ Sólo se puede comprar un producto por día y cliente la clave primaria es el cl
 En la venta es un método el que resta 1 a la cantidad de producto.
 No controla pagos ya que el cliente no paga el producto en el momento de la compra sino que es parte de un paquete previo al evento.
 Los datos para cargar la base datos se han cargado en Mokaroo.
-Usa fiechoose para seleccionar el archivo .json para cargar datos en la tabla usuarios, éste devuelve la ruta que recibe un método gson que devuelve una List<UsuarioLoginDTO> que el método de la clase UsuarioLoginDAO lee y carga en la base de datos.
+Usa la clase Filechoose para seleccionar el archivo .json para cargar datos en la tabla usuarios, éste devuelve la ruta que recibe un método gson que devuelve una List<UsuarioLoginDTO> que el método de la clase UsuarioLoginDAO lee y carga en la base de datos.
 Crea la tabla usuarios por primera vez y luego cada vez que arranca la aplicación borra todos los datos antes de cargar los nuevos.
 Utilidad de la aplicación: Realizar compras y devoluciones y llevar un seguimiento de los productos, mediante opción administración 
 muestra los productos vendidos devueltos que no son aptos para vender, mediante la tabla devoluciones vemos los productos(Estado CORRECTO) que han sido devueltos y que al estar en buenas condiciones se han ido de nuevo a ventas.
